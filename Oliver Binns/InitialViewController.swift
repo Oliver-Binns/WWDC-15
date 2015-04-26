@@ -19,15 +19,22 @@ class InitialViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        GlobalMethods.makeRound(meButton);
+        GlobalMethods.makeRound(workButton);
+        GlobalMethods.makeRound(musicButton);
+        GlobalMethods.makeRound(codeButton);
+        GlobalMethods.makeRound(schoolButton);
         // Do any additional setup after loading the view.
     }
 
+    @IBAction func showDetail(sender: UIButton) {
+        self.performSegueWithIdentifier("showDetail", sender: sender);
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation
@@ -38,5 +45,21 @@ class InitialViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "showDetail"){
+            var destController = segue.destinationViewController as! RootViewController;
+            if(sender?.tag == 0){
+                destController.dataSet = "Work";
+            }
+            else if(sender?.tag == 1){
+                destController.dataSet = "Music";
+            }
+            else if(sender?.tag == 2){
+                destController.dataSet = "Code";
+            }
+            else{
+                destController.dataSet = "School";
+            }
+        }
+    }
 }

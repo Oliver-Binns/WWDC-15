@@ -16,6 +16,9 @@
 		A7998C1F1AECDB9000159924 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7998C1D1AECDB9000159924 /* LaunchScreen.xib */; };
 		A7998C2B1AECDB9000159924 /* Oliver_BinnsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7998C2A1AECDB9000159924 /* Oliver_BinnsTests.swift */; };
 		A7998C351AECE34E00159924 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7998C341AECE34E00159924 /* InitialViewController.swift */; };
+		A7998C371AECE9FB00159924 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7998C361AECE9FB00159924 /* AboutMeViewController.swift */; };
+		A7998C391AECEAD700159924 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7998C381AECEAD700159924 /* MapKit.framework */; };
+		A7998C3D1AECF2CE00159924 /* GlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7998C3C1AECF2CE00159924 /* GlobalMethods.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		A7998C291AECDB9000159924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7998C2A1AECDB9000159924 /* Oliver_BinnsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oliver_BinnsTests.swift; sourceTree = "<group>"; };
 		A7998C341AECE34E00159924 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
+		A7998C361AECE9FB00159924 /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
+		A7998C381AECEAD700159924 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A7998C3C1AECF2CE00159924 /* GlobalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalMethods.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7998C391AECEAD700159924 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +72,7 @@
 		A7998C021AECDB9000159924 = {
 			isa = PBXGroup;
 			children = (
+				A7998C381AECEAD700159924 /* MapKit.framework */,
 				A7998C0D1AECDB9000159924 /* Oliver Binns */,
 				A7998C271AECDB9000159924 /* Oliver BinnsTests */,
 				A7998C0C1AECDB9000159924 /* Products */,
@@ -83,11 +91,13 @@
 		A7998C0D1AECDB9000159924 /* Oliver Binns */ = {
 			isa = PBXGroup;
 			children = (
+				A7998C3C1AECF2CE00159924 /* GlobalMethods.swift */,
 				A7998C101AECDB9000159924 /* AppDelegate.swift */,
 				A7998C121AECDB9000159924 /* RootViewController.swift */,
 				A7998C141AECDB9000159924 /* DataViewController.swift */,
 				A7998C161AECDB9000159924 /* ModelController.swift */,
 				A7998C181AECDB9000159924 /* Main.storyboard */,
+				A7998C361AECE9FB00159924 /* AboutMeViewController.swift */,
 				A7998C341AECE34E00159924 /* InitialViewController.swift */,
 				A7998C1B1AECDB9000159924 /* Images.xcassets */,
 				A7998C1D1AECDB9000159924 /* LaunchScreen.xib */,
@@ -221,10 +231,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7998C3D1AECF2CE00159924 /* GlobalMethods.swift in Sources */,
 				A7998C351AECE34E00159924 /* InitialViewController.swift in Sources */,
 				A7998C131AECDB9000159924 /* RootViewController.swift in Sources */,
 				A7998C171AECDB9000159924 /* ModelController.swift in Sources */,
 				A7998C151AECDB9000159924 /* DataViewController.swift in Sources */,
+				A7998C371AECE9FB00159924 /* AboutMeViewController.swift in Sources */,
 				A7998C111AECDB9000159924 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

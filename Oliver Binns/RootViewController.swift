@@ -11,13 +11,15 @@ import UIKit
 class RootViewController: UIViewController, UIPageViewControllerDelegate {
 
     var pageViewController: UIPageViewController?
+    var dataSet: String?
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = dataSet;
         // Do any additional setup after loading the view, typically from a nib.
         // Configure the page view controller and add it as a child view controller.
-        self.pageViewController = UIPageViewController(transitionStyle: .PageCurl, navigationOrientation: .Horizontal, options: nil)
+        self.pageViewController = UIPageViewController(transitionStyle: UIPageViewControllerTransitionStyle.Scroll, navigationOrientation: .Horizontal, options: nil)
         self.pageViewController!.delegate = self
 
         let startingViewController: DataViewController = self.modelController.viewControllerAtIndex(0, storyboard: self.storyboard!)!
