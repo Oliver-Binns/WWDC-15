@@ -3,7 +3,7 @@
               {
                     "name": "University of York",
                     "image":   ["UoY"],
-                    "text": "I am currently a second year undergraduate in Computer Science at the University of York taking a wide range of modules.\n\nMy current modules are:\n-Introduction to Artificial Intelligence\n-Computability & Complexity\n-Software Engineering Project\n-Principles of Programming Languages\n-Systems Software and Compilers\n-Vision and Graphics\n\nIn my first year I took Digital Architecture, Circuits and Systems, Human Aspects of CS, Introduction to Computer Architectures, Mathematical Foundations of CS, Numerical Analysis and Theory & Practice of Programming. \n\nIn my first year, I achieved an overall mark of 70% - which is the equivalent of a First.",
+                    "text": "I am currently a second year undergraduate in Computer Science at the University of York taking a wide range of modules.\n\nMy current modules are:\n-Introduction to Artificial Intelligence\n-Computability & Complexity\n-Software Engineering Project\n-Principles of Programming Languages\n-Systems Software and Compilers\n-Vision and Graphics\n\nHit the link below to find out more details about my group software engineering project in which we created a turn-based train game in Java.\n\nIn my first year I took Digital Architecture, Circuits and Systems, Human Aspects of CS, Introduction to Computer Architectures, Mathematical Foundations of CS, Numerical Analysis and Theory & Practice of Programming. \n\nIn my first year, I achieved an overall mark of 70% - which is the equivalent of a First.",
                     "url": "http://sepr-jkg.oliverbinns.co.uk/"
               },
               {
@@ -16,7 +16,7 @@
             {
                 "name": "Vanbrugh College",
                 "image":   ["Vanbrugh"],
-                "text": "As part of my role of Vice Chair for Communications of my college at university, I have created an app for our students. It is built primarily iOS first but also available on Android. The app was originally designed as a companion app for Freshers' Week 2014, helping new students to settle in. The app dynamically displayed information relevant for each accommodation block, by pulling it from a json file on an external server. Information included move-in dates, relevant contacts and events. Users were also able to navigate around campus to the wide range of events that were on using map widgets.\n\nThe app has since been updated to include the college discounts scheme - discounts can now be accessed at retailers by showing the app - and bus times from bus stop near the college.\n\nFor Freshers' 2015, I am working with all the other colleges at the university in order to expand this to their students too. The improved app will be similar in format but will pull even more information from a database stored on an external server. This will allow each of the college teams to add events, contacts and tweak branding. The new University of York Colleges' app is planned to target users of iOS, Android and Windows Phone.",
+                "text": "As part of my role of Vice Chair for Communications of my college at university, I have created a website and an app for our students.\n\nThe website has a completely bespoke content management system written in PHP and Javascript, which allows the student committee to login and add news articles and other content to the site.\n\nThe app is built primarily iOS first (in Objective-C), but also available on Android (Java). The app was originally designed as a companion app for Freshers' Week 2014, helping new students to settle in. The app dynamically displayed information relevant for each accommodation block, by pulling it from a json file on an external server. Information included move-in dates, relevant contacts and events. Users were also able to navigate around campus to the wide range of events that were on using map widgets.\n\nThe app has since been updated to include the college discounts scheme - discounts can now be accessed at retailers by showing the app - and bus times from bus stop near the college.\n\nFor Freshers' 2015, I am working with all the other colleges at the university in order to expand this to their students too. The improved app will be similar in format but will pull even more information from a database stored on an external server. This will allow each of the college teams to add events, contacts and tweak branding. The new University of York Colleges' app is planned to target users of iOS, Android and Windows Phone.",
                 "url": "http://www.vanbrugh-college.co.uk/app/preview.php"
             },
             {
@@ -26,10 +26,22 @@
                 "url": "https://itunes.apple.com/gb/app/adrianagrams/id670805933?mt=8"
             },
             {
+                "name": "Alexander Binns",
+                "image": ["Alex-Site"],
+                "text": "Alexander Binns, my brother, is a student at the Royal Academy of Music and Organ Scholar at Southwark Cathedral, London.\n\nI created a website for him, which he finds very useful for acquiring freelance jobs around London.",
+                "url": "http://www.alexanderbinns.co.uk/"
+            },
+            {
                 "name": "I Don't Know‽",
                 "image":["IDK"],
                 "text": "I Don't Know‽ was a random generator for all kinds of genres for Windows Phone and iOS.\n\nIt allowed users to find a random item from these different categories, such as TV Shows, Restaurants and Drinks. Due to the limited range of the app, and low download figures, I have ended development on it.",
                 "url": "http://www.windowsphone.com/en-gb/store/app/i-don-t-know/650136f1-f055-4cc3-8cd5-e71153157465"
+            },
+            {
+                "name": "York Tour - Concept App",
+                "image": ["YorkTour"],
+                "text": "As part of a group project during the Human Aspects of Computer Science module in First Year at the University of York, we produced a conceptual app design. While this didn't actually require any code, creating the app allowed us to think about potential users' needs from an app and helped us to design user interfaces accordingly.\n\nFull conceptual and user interface designs can be found by following the link below.",
+                "url": "http://oliverbinns.co.uk/oldsite/yorktour.php"
             }
     ],
     "Work":[
@@ -56,12 +68,12 @@
                 "name": "Singing",
                 "image": ["Choir"],
                 "text": "I have been a dedicated member of the Halifax Minster choir since 2002. As such, I have been part of the choirs many appearances, including a 2011 live service on BBC1, during which I sung the baritone solo of the Benedictus from Darke's Communion Service in F, and BBC Radio Leeds' Christmas Service 2014.\n\nAs part of my solo singing, I have also attained ABRSM Grade 8.",
-                "url": "https://www.youtube.com/watch?v=oGWXcL5VaT0",
+                "url": "https://www.youtube.com/watch?v=oGWXcL5VaT0"
             },
             {
-                 "name": "Violin",
+                 "name": "Other",
                  "image": ["Violin"],
-                 "text": "I have been playing violin since my first year of high school. At NHGS I used to play in the school orchestra and more recently I have been a member of the University of York Concert Orchestra.\n\nI also have attained ABRSM Grade 7 on the Violin. "
+                 "text": "I have been playing violin since my first year of high school. At NHGS I used to play in the school orchestra and more recently I have been a member of the University of York Concert Orchestra.\n\nI also have attained ABRSM Grade 7 on the Violin and Grade 5 in both Piano and Music Theory."
              }
     ]
 }
