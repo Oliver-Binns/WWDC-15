@@ -25,14 +25,17 @@ class AboutMeViewController: UIViewController, MFMailComposeViewControllerDelega
         self.navigationItem.title = "About Me";
         
         //sets the label text
-        label.text = "I'm from the town of Halifax in sunny old England and this app is all about me!\n\nFor more information you can contact me below.";
+        label.text = "I'm from the town of Halifax, in sunny old England, and this app is all about me!\n\nFor more information you can contact me below.";
         
+        // Do any additional setup after loading the view.
+    }
+
+    //Masks our buttons once view has finished laying out the subviews as until this point we do not know the SIZE of the button.
+    override func viewDidLayoutSubviews() {
         //Masks our buttons to be round - looks prettier
         GlobalMethods.makeRound(mailButton);
         GlobalMethods.makeRound(twitterButton);
         GlobalMethods.makeRound(linkedInButton);
-        
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func sendMail(sender: UIButton) {
@@ -83,7 +86,7 @@ class AboutMeViewController: UIViewController, MFMailComposeViewControllerDelega
         alertController.addAction(okay);
         self.presentViewController(alertController, animated: true, completion: nil);
     }
-    
+
     override func viewDidAppear(animated: Bool) {
         animateMap();
     }
