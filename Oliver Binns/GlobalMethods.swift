@@ -15,12 +15,17 @@ class GlobalMethods: NSObject {
         button.layer.masksToBounds = true;
     }
     
+    //Returns true if the device is an iPhone 4S.
     class func is4S() -> Bool{
         if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
             if UIScreen.mainScreen().nativeBounds.height == 960 {
                 return true;
             }
+            else{
+                return false;
+            }
         }
-        return false;
+        //iPads are the same ratio as 3.5 inch devices, we need to make the same adjustments
+        return true;
     }
 }

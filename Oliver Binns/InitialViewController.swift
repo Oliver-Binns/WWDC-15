@@ -19,18 +19,20 @@ class InitialViewController: UIViewController {
     
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad();
+        
+        //Remove name label from screen if the device is small, instead place name in Navigation bar!
         if(GlobalMethods.is4S()){
             oliverBinns.removeFromSuperview();
             self.navigationItem.title = "Oliver Binns";
         }
         
+        //Make all the buttons round because it looks pretty!
         GlobalMethods.makeRound(meButton);
         GlobalMethods.makeRound(workButton);
         GlobalMethods.makeRound(musicButton);
         GlobalMethods.makeRound(codeButton);
         GlobalMethods.makeRound(schoolButton);
-        // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -53,13 +55,9 @@ class InitialViewController: UIViewController {
         }
     }
 
+    //Button has been pressed! Open the Details in Paged View
     @IBAction func showDetail(sender: UIButton) {
         self.performSegueWithIdentifier("showDetail", sender: sender);
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     //Called upon pressing of a button, expands the button slightly.
@@ -80,18 +78,15 @@ class InitialViewController: UIViewController {
             }, completion: nil)
     }
     
-    /*
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
+
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if(segue.identifier == "showDetail"){
+            // Get the new view controller using segue.destinationViewController.
             var destController = segue.destinationViewController as! RootViewController;
+            //Pass the appropriate data labels
             if(sender?.tag == 0){
                 destController.dataSet = "Work";
             }

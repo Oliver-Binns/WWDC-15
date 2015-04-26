@@ -15,6 +15,7 @@ class DataObject: NSObject {
     var images: [UIImage] = [];
     var url: String?
     
+    //Given a dictionary of data, initialises the object
     init(index: Int, dictionary: NSDictionary){
         super.init();
         name = dictionary.objectForKey("name") as? String;
@@ -26,7 +27,9 @@ class DataObject: NSObject {
             var img = imgArr[i] as? String;
             images.append(UIImage(named: img!)!);
         }
+        
         self.index = index;
+        
         url = dictionary.objectForKey("url") as? String;
     }
 }
