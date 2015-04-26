@@ -15,6 +15,7 @@
 		A7998C1C1AECDB9000159924 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A7998C1B1AECDB9000159924 /* Images.xcassets */; };
 		A7998C1F1AECDB9000159924 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7998C1D1AECDB9000159924 /* LaunchScreen.xib */; };
 		A7998C2B1AECDB9000159924 /* Oliver_BinnsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7998C2A1AECDB9000159924 /* Oliver_BinnsTests.swift */; };
+		A7998C351AECE34E00159924 /* InitialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7998C341AECE34E00159924 /* InitialViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,7 @@
 		A7998C241AECDB9000159924 /* Oliver BinnsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Oliver BinnsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A7998C291AECDB9000159924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A7998C2A1AECDB9000159924 /* Oliver_BinnsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Oliver_BinnsTests.swift; sourceTree = "<group>"; };
+		A7998C341AECE34E00159924 /* InitialViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InitialViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				A7998C141AECDB9000159924 /* DataViewController.swift */,
 				A7998C161AECDB9000159924 /* ModelController.swift */,
 				A7998C181AECDB9000159924 /* Main.storyboard */,
+				A7998C341AECE34E00159924 /* InitialViewController.swift */,
 				A7998C1B1AECDB9000159924 /* Images.xcassets */,
 				A7998C1D1AECDB9000159924 /* LaunchScreen.xib */,
 				A7998C0E1AECDB9000159924 /* Supporting Files */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7998C351AECE34E00159924 /* InitialViewController.swift in Sources */,
 				A7998C131AECDB9000159924 /* RootViewController.swift in Sources */,
 				A7998C171AECDB9000159924 /* ModelController.swift in Sources */,
 				A7998C151AECDB9000159924 /* DataViewController.swift in Sources */,
