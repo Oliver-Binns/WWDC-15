@@ -15,10 +15,16 @@ class InitialViewController: UIViewController {
     @IBOutlet weak var musicButton: UIButton!
     @IBOutlet weak var codeButton: UIButton!
     @IBOutlet weak var schoolButton: UIButton!
+    @IBOutlet weak var oliverBinns: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if(GlobalMethods.is4S()){
+            oliverBinns.removeFromSuperview();
+            self.navigationItem.title = "Oliver Binns";
+        }
+        
         GlobalMethods.makeRound(meButton);
         GlobalMethods.makeRound(workButton);
         GlobalMethods.makeRound(musicButton);
@@ -26,7 +32,7 @@ class InitialViewController: UIViewController {
         GlobalMethods.makeRound(schoolButton);
         // Do any additional setup after loading the view.
     }
-
+    
     override func viewDidAppear(animated: Bool) {
         //Check if we've just opened! We don't want to display the animation upon RETURNING to the view.
         if(NSUserDefaults.standardUserDefaults().boolForKey("HasJustLaunched")){

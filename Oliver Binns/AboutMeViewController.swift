@@ -26,8 +26,7 @@ class AboutMeViewController: UIViewController, MFMailComposeViewControllerDelega
         
         //sets the label text
         label.text = "I'm from the town of Halifax, in sunny old England, and this app is all about me!\n\nFor more information you can contact me below.";
-        
-        // Do any additional setup after loading the view.
+        mapView.mapType = MKMapType.Hybrid;
     }
 
     //Masks our buttons once view has finished laying out the subviews as until this point we do not know the SIZE of the button.

@@ -14,4 +14,13 @@ class GlobalMethods: NSObject {
         button.layer.cornerRadius = button.layer.frame.width / 2;
         button.layer.masksToBounds = true;
     }
+    
+    class func is4S() -> Bool{
+        if UIDevice.currentDevice().userInterfaceIdiom == .Phone {
+            if UIScreen.mainScreen().nativeBounds.height == 960 {
+                return true;
+            }
+        }
+        return false;
+    }
 }
