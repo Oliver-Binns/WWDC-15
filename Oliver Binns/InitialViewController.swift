@@ -27,6 +27,26 @@ class InitialViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
+    override func viewDidAppear(animated: Bool) {
+        //Check if we've just opened! We don't want to display the animation upon RETURNING to the view.
+        if(NSUserDefaults.standardUserDefaults().boolForKey("HasJustLaunched")){
+            //For each of the buttons, animate their appearances on the screen!
+            var array: [UIButton] = [meButton, workButton, musicButton, codeButton, schoolButton];
+            for(var i = 0; i < array.count; i++){
+                array[i].alpha = 0;
+                array[i].imageView?.bounds = CGRectInset(array[i].imageView!.frame, -100, -100);
+                
+                UIView.animateWithDuration(0.5, delay: 0.5, options: UIViewAnimationOptions.CurveEaseIn, animations: {
+                    array[i].alpha = 1;
+                    array[i].imageView!.bounds = array[i].bounds;
+                }, completion: nil);
+            }
+            //Set the just launched flag as false so that we don't reanimate on returning to this view.
+            NSUserDefaults.standardUserDefaults().setBool(false, forKey: "HasJustLaunched");
+            NSUserDefaults.standardUserDefaults().synchronize();
+        }
+    }
+
     @IBAction func showDetail(sender: UIButton) {
         self.performSegueWithIdentifier("showDetail", sender: sender);
     }
@@ -36,6 +56,7 @@ class InitialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    //Called upon pressing of a button, expands the button slightly.
     @IBAction func expandButton(sender: UIButton) {
         UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
             sender.layer.cornerRadius = (sender.frame.height + 6) / 2;
@@ -43,6 +64,8 @@ class InitialViewController: UIViewController {
             sender.bounds.size.width = sender.bounds.width + 6;
         }, completion: nil)
     }
+    
+    //Called upon pressing of a button, contracts the button slightly.
     @IBAction func contractButton(sender: UIButton){
         UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
             sender.layer.cornerRadius = (sender.frame.height - 6) / 2;

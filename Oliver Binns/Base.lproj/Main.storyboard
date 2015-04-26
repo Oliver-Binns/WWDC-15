@@ -98,6 +98,9 @@
                                         <exclude reference="gpM-rh-fJH"/>
                                     </mask>
                                 </variation>
+                                <connections>
+                                    <outlet property="delegate" destination="hzS-jB-y9W" id="CbV-WF-8WS"/>
+                                </connections>
                             </scrollView>
                         </subviews>
                         <constraints>
@@ -130,6 +133,7 @@
                         <outlet property="dataLabel" destination="dvp-dB-ERq" id="di0-Pz-TGn"/>
                         <outlet property="detailButton" destination="dDb-5C-SKm" id="Ect-fN-MbS"/>
                         <outlet property="imageView" destination="VS3-iT-ZLA" id="24a-8L-orB"/>
+                        <outlet property="scrollView" destination="aSh-pD-hz6" id="92l-ob-sET"/>
                         <outlet property="textLabel" destination="3CB-VH-Ooe" id="tEL-gk-Y4H"/>
                     </connections>
                 </viewController>
@@ -299,7 +303,6 @@ For more information you can contact me below.</string>
         <!--Navigation Controller-->
         <scene sceneID="zuN-I0-4A9">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dpb-AB-aJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="pyI-xk-Qeo" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ldr-Au-nqf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -309,6 +312,7 @@ For more information you can contact me below.</string>
                         <segue destination="tUb-V3-YRg" kind="relationship" relationship="rootViewController" id="ZMC-zs-TOm"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dpb-AB-aJU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-636" y="-245"/>
         </scene>
@@ -333,13 +337,13 @@ For more information you can contact me below.</string>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEU-O7-VgI">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qEU-O7-VgI">
                                         <rect key="frame" x="220" y="16" width="160" height="160"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="qEU-O7-VgI" secondAttribute="height" multiplier="1:1" id="YzC-qU-lua"/>
                                             <constraint firstAttribute="width" constant="160" id="l0E-0w-fo9"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="Oliver">
+                                        <state key="normal" image="Oliver">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -361,10 +365,10 @@ For more information you can contact me below.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSw-rV-f1R">
                                 <rect key="frame" x="0.0" y="447" width="300" height="153"/>
                                 <subviews>
-                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7p-ca-BfQ">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V7p-ca-BfQ">
                                         <rect key="frame" x="100" y="27" width="100" height="100"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" backgroundImage="Code"/>
+                                        <state key="normal" image="Code"/>
                                         <connections>
                                             <action selector="contractButton:" destination="tUb-V3-YRg" eventType="touchUpInside" id="344-s9-5z2"/>
                                             <action selector="contractButton:" destination="tUb-V3-YRg" eventType="touchUpOutside" id="u5Y-7Z-vEQ"/>
@@ -382,15 +386,15 @@ For more information you can contact me below.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5H0-f7-206">
                                 <rect key="frame" x="300" y="447" width="300" height="153"/>
                                 <subviews>
-                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-3e-E8P">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLo-3e-E8P">
                                         <rect key="frame" x="100" y="27" width="100" height="100"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <state key="normal" backgroundImage="School">
+                                        <state key="normal" image="School">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
                                             <action selector="contractButton:" destination="tUb-V3-YRg" eventType="touchUpOutside" id="oHM-kS-Aep"/>
-                                            <action selector="contractButton:" destination="tUb-V3-YRg" eventType="touchDown" id="pVc-qw-yhm"/>
+                                            <action selector="contractButton:" destination="tUb-V3-YRg" eventType="touchUpInside" id="oHW-cE-wnW"/>
                                             <action selector="expandButton:" destination="tUb-V3-YRg" eventType="touchDown" id="auR-xT-bO2"/>
                                             <action selector="showDetail:" destination="tUb-V3-YRg" eventType="touchUpInside" id="0hh-T2-hgi"/>
                                         </connections>
@@ -411,14 +415,14 @@ For more information you can contact me below.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R83-Ff-Y6d">
                                 <rect key="frame" x="0.0" y="294" width="300" height="153"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQx-Um-xIk">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GQx-Um-xIk">
                                         <rect key="frame" x="100" y="27" width="100" height="100"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="1Yx-y8-tb0"/>
                                             <constraint firstAttribute="width" constant="100" id="chF-Kf-ODA"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="Work">
+                                        <state key="normal" image="Work">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
@@ -438,13 +442,13 @@ For more information you can contact me below.</string>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7cS-sp-LB4">
                                 <rect key="frame" x="300" y="294" width="300" height="153"/>
                                 <subviews>
-                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJQ-sm-frH">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJQ-sm-frH">
                                         <rect key="frame" x="100" y="27" width="100" height="100"/>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="100" id="9uw-vf-65z"/>
                                         </constraints>
-                                        <state key="normal" backgroundImage="Music">
+                                        <state key="normal" image="Music">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>

@@ -9,19 +9,21 @@
 import UIKit
 import Foundation
 
-class DataViewController: UIViewController {
+class DataViewController: UIViewController, UIScrollViewDelegate {
 
     @IBOutlet weak var dataLabel: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var textLabel: UILabel!
     @IBOutlet weak var detailButton: UIButton!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var dataObject: DataObject?
+    var delayTimer: NSTimer?
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -35,7 +37,7 @@ class DataViewController: UIViewController {
             imageView.image = obj.images[0];
             //add images to the array
             imageView.animationImages = obj.images;
-            imageView.animationDuration = 5.0;
+            imageView.animationDuration = 10.0;
             imageView.startAnimating()
             
             
@@ -48,6 +50,22 @@ class DataViewController: UIViewController {
             }
         }
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        //flash the scroll bars every two seconds to let the user know that the text can be scrolled
+        delayTimer = NSTimer.scheduledTimerWithTimeInterval(2, target: self, selector: Selector("flashScroll"), userInfo: nil, repeats: true);
+    }
+    
+    func flashScroll(){
+        scrollView.flashScrollIndicators();
+    }
+    
+    //The user has scrolled, we can stop flashing the scroll bars now!
+    func scrollViewDidScroll(scrollView: UIScrollView) {
+        delayTimer?.invalidate();
+        delayTimer = nil;
+    }
+    
     
     //Called when the 'Find Out More' button is pressed to determine the appropriate site to open!
     func buttonPress(){
