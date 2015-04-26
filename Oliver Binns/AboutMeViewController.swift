@@ -25,7 +25,7 @@ class AboutMeViewController: UIViewController, MFMailComposeViewControllerDelega
         self.navigationItem.title = "About Me";
         
         //sets the label text
-        label.text = "I'm from the town of Halifax, in sunny old England, and this app is all about me!\n\nFor more information you can contact me below.";
+        label.text = "I'm a Computer Science student studying at the University of York. Originally from the town of Halifax, in sunny, old England.\n\nHopefully this app speaks for itself, but for more information you can contact me below.";
         
         //Sets the mapView to be show a HYBRID map
         mapView.mapType = MKMapType.Hybrid;
