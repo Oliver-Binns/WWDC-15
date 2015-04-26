@@ -19,6 +19,8 @@
 		A7998C371AECE9FB00159924 /* AboutMeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7998C361AECE9FB00159924 /* AboutMeViewController.swift */; };
 		A7998C391AECEAD700159924 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7998C381AECEAD700159924 /* MapKit.framework */; };
 		A7998C3D1AECF2CE00159924 /* GlobalMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7998C3C1AECF2CE00159924 /* GlobalMethods.swift */; };
+		A7998C3F1AED106C00159924 /* DataObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7998C3E1AED106C00159924 /* DataObject.swift */; };
+		A7998C411AED11CC00159924 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = A7998C401AED11CB00159924 /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		A7998C361AECE9FB00159924 /* AboutMeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutMeViewController.swift; sourceTree = "<group>"; };
 		A7998C381AECEAD700159924 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		A7998C3C1AECF2CE00159924 /* GlobalMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GlobalMethods.swift; sourceTree = "<group>"; };
+		A7998C3E1AED106C00159924 /* DataObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataObject.swift; sourceTree = "<group>"; };
+		A7998C401AED11CB00159924 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,8 @@
 				A7998C101AECDB9000159924 /* AppDelegate.swift */,
 				A7998C121AECDB9000159924 /* RootViewController.swift */,
 				A7998C141AECDB9000159924 /* DataViewController.swift */,
+				A7998C3E1AED106C00159924 /* DataObject.swift */,
+				A7998C401AED11CB00159924 /* data.json */,
 				A7998C161AECDB9000159924 /* ModelController.swift */,
 				A7998C181AECDB9000159924 /* Main.storyboard */,
 				A7998C361AECE9FB00159924 /* AboutMeViewController.swift */,
@@ -214,6 +220,7 @@
 				A7998C1A1AECDB9000159924 /* Main.storyboard in Resources */,
 				A7998C1F1AECDB9000159924 /* LaunchScreen.xib in Resources */,
 				A7998C1C1AECDB9000159924 /* Images.xcassets in Resources */,
+				A7998C411AED11CC00159924 /* data.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +242,7 @@
 				A7998C351AECE34E00159924 /* InitialViewController.swift in Sources */,
 				A7998C131AECDB9000159924 /* RootViewController.swift in Sources */,
 				A7998C171AECDB9000159924 /* ModelController.swift in Sources */,
+				A7998C3F1AED106C00159924 /* DataObject.swift in Sources */,
 				A7998C151AECDB9000159924 /* DataViewController.swift in Sources */,
 				A7998C371AECE9FB00159924 /* AboutMeViewController.swift in Sources */,
 				A7998C111AECDB9000159924 /* AppDelegate.swift in Sources */,

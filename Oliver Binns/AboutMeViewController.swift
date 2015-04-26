@@ -100,7 +100,7 @@ class AboutMeViewController: UIViewController, MFMailComposeViewControllerDelega
     //this function animates the map zoom when the View appears
     func animateMap(){
         //Sets the camera to coordinates of Halifax
-        var camera = MKMapCamera(lookingAtCenterCoordinate: CLLocationCoordinate2D(latitude: 53.723682, longitude:  -1.856196), fromEyeCoordinate: CLLocationCoordinate2D(latitude: 53.723682, longitude:  -1.856196), eyeAltitude: CLLocationDistance(1500));
+        var camera = MKMapCamera(lookingAtCenterCoordinate: CLLocationCoordinate2D(latitude: 53.723682, longitude:  -1.856196), fromEyeCoordinate: CLLocationCoordinate2D(latitude: 53.723682, longitude:  -1.856196), eyeAltitude: CLLocationDistance(2500));
         //animates the camera change
         mapView.setCamera(camera, animated: true);
     }

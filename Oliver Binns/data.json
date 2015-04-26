@@ -1,0 +1,67 @@
+{
+    "School":[
+              {
+                    "name": "University of York",
+                    "image":   ["UoY"],
+                    "text": "I am currently a second year undergraduate in Computer Science at the University of York taking a wide range of modules.\n\nMy current modules are:\n-Introduction to Artificial Intelligence\n-Computability & Complexity\n-Software Engineering Project\n-Principles of Programming Languages\n-Systems Software and Compilers\n-Vision and Graphics\n\nIn my first year I took Digital Architecture, Circuits and Systems, Human Aspects of CS, Introduction to Computer Architectures, Mathematical Foundations of CS, Numerical Analysis and Theory & Practice of Programming. \n\nIn my first year, I achieved an overall mark of 70% - which is the equivalent of a First.",
+                    "url": "http://sepr-jkg.oliverbinns.co.uk/"
+              },
+              {
+                    "name": "NHGS",
+                    "image":   ["NHGS"],
+                    "text": "I was at The North Halifax Grammar School from 2006 until 2014.\n\nDuring my final year at NHGS I created a basic app for the school. The app was created in HTML/CSS and a small amount of javascript and then run locally in a UIWebView. It was available on iOS and Android, however development has been discontinued."
+              }
+    ],
+    "Code":[
+            {
+                "name": "Vanbrugh College",
+                "image":   ["Vanbrugh"],
+                "text": "As part of my role of Vice Chair for Communications of my college at university, I have created an app for our students. It is built primarily iOS first but also available on Android. The app was originally designed as a companion app for Freshers' Week 2014, helping new students to settle in. The app dynamically displayed information relevant for each accommodation block, by pulling it from a json file on an external server. Information included move-in dates, relevant contacts and events. Users were also able to navigate around campus to the wide range of events that were on using map widgets.\n\nThe app has since been updated to include the college discounts scheme - discounts can now be accessed at retailers by showing the app - and bus times from bus stop near the college.\n\nFor Freshers' 2015, I am working with all the other colleges at the university in order to expand this to their students too. The improved app will be similar in format but will pull even more information from a database stored on an external server. This will allow each of the college teams to add events, contacts and tweak branding. The new University of York Colleges' app is planned to target users of iOS, Android and Windows Phone.",
+                "url": "http://www.vanbrugh-college.co.uk/app/preview.php"
+            },
+            {
+                "name": "Adrianagrams",
+                "image":   ["Adrianagrams"],
+                "text": "Originally written as a web game in Javascript, I first ported Adrianagrams to iOS back in 2013 by simply placing it inside a webview. Adrianagrams has since been updated to run natively in Objective-C, which obviously gave some very significant performance improvements, making it seem more responsive and look sleeker.\n\nAdrianagrams is a fast-paced word game. You are given a word and have 60 seconds to find any and all the words you can make with the same letters! I have used the built-in post to Twitter and Facebook APIs to allow users to post their score online - in an attempt to make the game more competitive for players and increase the reach of the app.",
+                "url": "https://itunes.apple.com/gb/app/adrianagrams/id670805933?mt=8"
+            },
+            {
+                "name": "I Don't Know‽",
+                "image":["IDK"],
+                "text": "I Don't Know‽ was a random generator for all kinds of genres for Windows Phone and iOS.\n\nIt allowed users to find a random item from these different categories, such as TV Shows, Restaurants and Drinks. Due to the limited range of the app, and low download figures, I have ended development on it.",
+                "url": "http://www.windowsphone.com/en-gb/store/app/i-don-t-know/650136f1-f055-4cc3-8cd5-e71153157465"
+            }
+    ],
+    "Work":[
+            {
+                "name": "Amadeus",
+                "image": ["Amadeus"],
+                "text": "Part of my University course is an optional Year in Industry. After having a host of interviews and securing couple of offers, I eventually decided on an internship at Amadeus IT Group.\n\nI will be starting work at the Heathrow offices of Amadeus this July and working there until September 2016, before returning to York for the third year of my degree."
+            },
+            {
+                "name": "T.G.I. FRiDAY'S",
+                "image": ["Fridays0", "Fridays1"],
+                "text": "I have been working at T.G.I. FRiDAY'S, in my home town of Halifax, since the store opened in 2012.\n\nThe job has helped me to improve my confidence with approaching people, as well as helping me learn to work individually but as part of a wider team."
+                
+            },
+            {
+               "name": "cloud-nine",
+               "image": ["cloud-nine", "cloud-nine0", "cloud-nine1", "cloud-nine2"],
+                "text": "I started a Young Enterprise company along with several other students from my sixth form college. The company was aimed at reducing the large amount of time that small children spend on computer games and increasing motor skills and creativity through traditional arts and crafts.\n\nAs Company Secretary, I was mainly responsible for taking minutes during board meetings, but also organised the creation of our end of year Company Report. As an IT Consultant, I was responsible for the creation and maintenance of the company’s website and various other graphic design aspects, including transforming the company’s own font from a paper sketch to a final true-type font using Adobe Creative Suite 4.\n\nThroughout the year I was part of a sales team on our trade-stand at various high-profile shopping centres including The Corn Exchange, Leeds and The McArthurGlen Designer Outlet, York, where we won the award for Best Sales Team.\n\nAt the West Yorkshire Young Enterprise Final in May 2012, cloud-nine was awarded for Best Report and Accounts and Innovation and Enterprise.\n\nAlthough we created cloud-nine as a company aiming to balance children’s wide use of computers with traditional crafts, I made sure that we did not underestimate the usefulness of computers in a successful business environment. We used social media in order to keep our customers close and respond to any issues that inevitably occurred. On one particular occasion, a customer complained that her craft-kit did not contain a set of instructions. I was able to quickly respond by posting a copy of instructions onto our website.\n\nTowards the end of the year, I singlehandedly produced our bid for the Young Enterprise Human Networking Award for the United Kingdom, 2012, sponsored by Cisco Systems, which we won.",
+                "url": "https://twitter.com/youngenterprise/status/219902130146906112"
+            }
+    ],
+    "Music":[
+            {
+                "name": "Singing",
+                "image": ["Choir"],
+                "text": "I have been a dedicated member of the Halifax Minster choir since 2002. As such, I have been part of the choirs many appearances, including a 2011 live service on BBC1, during which I sung the baritone solo of the Benedictus from Darke's Communion Service in F, and BBC Radio Leeds' Christmas Service 2014.\n\nAs part of my solo singing, I have also attained ABRSM Grade 8.",
+                "url": "https://www.youtube.com/watch?v=oGWXcL5VaT0",
+            },
+            {
+                 "name": "Violin",
+                 "image": ["Violin"],
+                 "text": "I have been playing violin since my first year of high school. At NHGS I used to play in the school orchestra and more recently I have been a member of the University of York Concert Orchestra.\n\nI also have attained ABRSM Grade 7 on the Violin. "
+             }
+    ]
+}

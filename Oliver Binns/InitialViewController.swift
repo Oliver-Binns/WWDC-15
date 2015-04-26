@@ -36,6 +36,21 @@ class InitialViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func expandButton(sender: UIButton) {
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            sender.layer.cornerRadius = (sender.frame.height + 6) / 2;
+            sender.bounds.size.height = sender.bounds.height + 6;
+            sender.bounds.size.width = sender.bounds.width + 6;
+        }, completion: nil)
+    }
+    @IBAction func contractButton(sender: UIButton){
+        UIView.animateWithDuration(0.5, delay: 0.0, options: UIViewAnimationOptions.CurveEaseOut, animations: {
+            sender.layer.cornerRadius = (sender.frame.height - 6) / 2;
+            sender.bounds.size.height = sender.bounds.height - 6;
+            sender.bounds.size.width = sender.bounds.width - 6;
+            }, completion: nil)
+    }
+    
     /*
     // MARK: - Navigation
 

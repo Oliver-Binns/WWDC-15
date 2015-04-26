@@ -20,14 +20,17 @@ import UIKit
 
 class ModelController: NSObject, UIPageViewControllerDataSource {
 
-    var pageData = NSArray()
+    var pageData = NSMutableArray()
 
-
-    override init() {
+    init(dataSet: String) {
         super.init()
         // Create the data model.
-        let dateFormatter = NSDateFormatter()
-        pageData = dateFormatter.monthSymbols
+        var array = getDataArray(dataSet);
+        
+        for(var i = 0; i < array.count; i++){
+            var new = DataObject(index: i, dictionary: (array.objectAtIndex(i) as? NSDictionary)!);
+            pageData.addObject(new);
+        }
     }
 
     func viewControllerAtIndex(index: Int, storyboard: UIStoryboard) -> DataViewController? {
@@ -38,7 +41,7 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
 
         // Create a new view controller and pass suitable data.
         let dataViewController = storyboard.instantiateViewControllerWithIdentifier("DataViewController") as! DataViewController
-        dataViewController.dataObject = self.pageData[index]
+        dataViewController.dataObject = self.pageData[index] as? DataObject
         return dataViewController
     }
 
@@ -77,5 +80,13 @@ class ModelController: NSObject, UIPageViewControllerDataSource {
         return self.viewControllerAtIndex(index, storyboard: viewController.storyboard!)
     }
 
+    func getDataArray(type: String) -> NSArray{
+        var filePath = NSBundle.mainBundle().pathForResource("data", ofType: "json");
+        var data = NSData(contentsOfFile: filePath!);
+        var e:NSError?;
+        var json: NSDictionary = NSJSONSerialization.JSONObjectWithData(data!, options: NSJSONReadingOptions.AllowFragments, error: &e) as! NSDictionary;
+        var array : NSArray = json.objectForKey(type) as! NSArray;
+        return array;
+    }
 }
 
