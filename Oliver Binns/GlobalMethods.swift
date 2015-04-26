@@ -1,6 +1,7 @@
 //
 //  GlobalMethods.swift
 //  
+//  Static class with some basic methods that may be needed anywhere within the app!
 //
 //  Created by Oliver on 26/04/2015.
 //

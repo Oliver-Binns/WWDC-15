@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WatchKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -42,6 +43,30 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    //Called when the WatchKit app is launched and requests a story!
+    func application(application: UIApplication, handleWatchKitExtensionRequest userInfo: [NSObject : AnyObject]?, reply: (([NSObject : AnyObject]!) -> Void)!) {
+        //Replies to Apple Watch request with some new data!
+        reply(getRandomData() as [NSObject : AnyObject]);
+    }
+    
+    func getRandomData() -> NSDictionary{
+        //Randomly generates a number to determine which category to use
+        var x = arc4random() % 4;
+        var array = ["Music", "Work", "School", "Code"];
+        //Generates a model controller for this category for easy access of the data
+        var test: ModelController = ModelController(dataSet: array[Int(x)]);
+        //Randomly generates another number to determine which story
+        x = arc4random() % UInt32(test.pageData.count);
+        var dictionary = NSMutableDictionary();
+        var data = test.pageData[Int(x)] as!DataObject;
+        //Returns a story as a dictionary in the form of a title and description!
+        dictionary.setObject(data.name!, forKey: "title");
+        dictionary.setObject(data.text!, forKey: "description");
+        println(dictionary);
+        return dictionary;
+    }
+    
 
 
 }
